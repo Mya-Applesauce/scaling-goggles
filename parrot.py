@@ -1,9 +1,14 @@
-prompt = "If thou sharest thy name, we can personalize the messages thou seest."
-prompt += "\nWhat is thy first name?" 
+prompt = "Telleth me something, and I shalt repeat it backe to thee."
+prompt += "\nEntere 'quit' if thou wisheth to stoppe." 
 
 message = ''
-while message != "quit":
+active = True
+while active:
     message = input(prompt)
-    if message != "quit":
+    if message == "quit":
+        active = False
+    if message == "parrot":
+        print("Doth thou considereth thine self a wise guy?")
+        active = False
+    else:
         print(message)
-        
