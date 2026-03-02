@@ -1,8 +1,9 @@
-sandwich_orders = ["grilled cheese", "pb&j", "hoagie", "italian", "squid eyeball"]
+sandwich_orders = ["grilled cheese", "pb&j", "hoagie", "italian", "squid eyeball", "hotdog", "ham on rye", "meatball sub"]
 finished_sandwiches = []
 
 for sandwich in sandwich_orders:
     print(f"Thy {sandwich} sandwich 'tis served.")
     finished_sandwiches.append(sandwich)
 
-print(finished_sandwiches)
+for sandwiches in finished_sandwiches:
+    print(f"{sandwiches}, ", end="")
